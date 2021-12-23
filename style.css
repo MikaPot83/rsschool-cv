@@ -1,3 +1,77 @@
-.one {
-  color: rebeccapurple;
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Indie+Flower&display=swap');
+
+:root {
+  --primBkColor: rgb(168, 229, 240);
+  --secBkColor: rgb(250, 198, 198);
+  --margin: 4px;
+  --padding: 4px;
+  --doubleMargin: 2;
+  --minWidth: calc(200px - var(--margin) * var(--doubleMargin));
+  --imgWidth: calc(180px - var(--margin) * var(--doubleMargin));
+  --imgHeight: calc(180px - var(--margin) * var(--doubleMargin));
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;  
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Francois One', sans-serif;
+  margin: 2px;
+}
+
+main {
+  display: flex;  
+}
+
+header, footer {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - var(--margin));    
+  margin: var(--margin);
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+}
+
+.myInfo {  
+  border-radius: 5px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  margin: var(--margin);
+  flex-wrap: wrap;
+  min-width: var(--minWidth);
+  height: var(--imgHeight);
+  background-color: var(--primBkColor);
+}
+
+.myName, .myContacts {
+  display: flex;  
+  margin: var(--margin);
+  margin: var(--margin);
+  flex-direction: column;
+  text-align: center;
+}
+
+.myPhoto {
+  display: flex;
+  margin: var(--margin);
+  align-content: center;
+  background-color: var(--secBkColor);
+}
+
+.myPhoto-img {
+  border-radius: 50%;
+  max-height: calc(var(--imgHeight) - 10px);
+  width: calc(var(--imgWidth) - 30px);  
+}
+
+.skills {
+  text-align: left;
 }

@@ -2,6 +2,7 @@
 ## Contacts ##
 * Email: mikapotapoff@gmail.com
 * Telegram: @Maxtadont
+* Git: https://github.com/MikaPot83
   
 ## Basic skills ##
 * Delphi <b>(4/5)</b>
